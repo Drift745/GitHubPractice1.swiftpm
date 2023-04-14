@@ -7,8 +7,8 @@ struct ContentView: View {
     var body: some View{
         VStack{
             
-
             
+
             TextField("0", value: $number1, format: .number)
                 .textFieldStyle(.roundedBorder)
             
@@ -18,9 +18,11 @@ struct ContentView: View {
                 .textFieldStyle(.roundedBorder)
             
             Button("Multiply"){
+             
                 
             }
             Text(Store)
+         }
         }
     }
 }
