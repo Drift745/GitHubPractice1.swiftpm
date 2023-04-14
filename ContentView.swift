@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var Store:String = ""
+    @State var Store:Int = 0
     @State var number1:Int = 0
     @State var number2:Int = 0
     var body: some View{
@@ -18,9 +18,18 @@ struct ContentView: View {
                 .textFieldStyle(.roundedBorder)
             
             Button("Multiply"){
+             
+            }
+            Button("add"){
               
             }
-            Text(Store)
+            Button("Subtract"){
+              
+            }
+            Button("divide"){
+              
+            }
+            Text("\(Store)")
          }
         }
     }
