@@ -8,7 +8,7 @@ struct ContentView: View {
         VStack{
             
             
-
+            
             TextField("0", value: $number1, format: .number)
                 .textFieldStyle(.roundedBorder)
             
@@ -20,16 +20,17 @@ struct ContentView: View {
             Button("Multiply"){
                 Store = number1 * number2
             }
-            
-            
-            
-            
-            
-            
-            
-            
-            
+            Button("add"){
+                
+            }
+            Button("Subtract"){
+                
+            }
+            Button("divide"){
+                
+            }
             Text("\(Store)")
+         }
         }
     }
 }
