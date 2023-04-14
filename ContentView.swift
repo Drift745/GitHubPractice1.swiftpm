@@ -18,9 +18,17 @@ struct ContentView: View {
                 .textFieldStyle(.roundedBorder)
             
             Button("Multiply"){
-             
-                
+                Store = number1 * number2
             }
+            
+            
+            
+            
+            
+            
+            
+            
+            
             Text("\(Store)")
         }
     }
