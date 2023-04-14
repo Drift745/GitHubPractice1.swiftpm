@@ -4,10 +4,10 @@ struct ContentView: View {
     @State var Store:String = ""
     @State var number1:Int = 0
     @State var number2:Int = 0
-        VStack {
-        Button("Multiply"){
-        
+    var body: some View{
+        VStack{
             
+
             
             TextField("0", value: $number1, format: .number)
                 .textFieldStyle(.roundedBorder)
@@ -16,16 +16,12 @@ struct ContentView: View {
             
             TextField("0", value: $number2, format: .number)
                 .textFieldStyle(.roundedBorder)
+            
+            Button("Multiply"){
+                
+            }
+            Text(Store)
         }
-        Text(Store)
-        
-        
-        
-        
-        
-        
-        
-        
-        
     }
 }
+
