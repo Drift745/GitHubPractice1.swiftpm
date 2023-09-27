@@ -1,12 +1,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var tasks = ["Play Pokemon","Charge consoles","complete PokeDex"]
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List{
+            ForEach(tasks,id: \.self){ task in
+                Text(task)
+                
+            }
         }
     }
 }
