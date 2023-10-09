@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var tasks = ["Play Pokemon","Charge consoles","complete PokeDex"]
+    @State var tasks:[Task] = [Task(nameOfTask: "Play Pokemon"),Task(nameOfTask: "Charge consoles"),Task(nameOfTask: "complete PokeDex")]
     var body: some View {
         List{
             ForEach(tasks,id: \.self){ task in
-                Text(task)
+                Text(task.nameOfTask)
                 
             }
         }
