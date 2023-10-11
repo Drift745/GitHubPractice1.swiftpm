@@ -17,6 +17,10 @@ struct HeaderView:View{
     var body: some View{
         HStack{
             TextField("enter new task",text:$newTask)
+                .textFieldStyle(.roundedBorder)
+                .padding()
+            
+                
             Button("add task"){
                 Tasks.append(Task(nameOfTask: "\($newTask)"))
             }
