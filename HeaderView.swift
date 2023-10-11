@@ -22,7 +22,7 @@ struct HeaderView:View{
             
                 
             Button("add task"){
-                Tasks.append(Task(nameOfTask: "\($newTask)"))
+                Tasks.append(Task(nameOfTask:newTask))
             }
         }
     }
