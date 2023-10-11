@@ -1,8 +1,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var tasks:[Task] = [Task(nameOfTask: "Play Pokemon"),Task(nameOfTask: "Charge consoles"),Task(nameOfTask: "complete PokeDex")]
+   
+    @State var tasks:[Task] = []
+
     var body: some View {
+        HeaderView(Tasks: $tasks)
         List{
             ForEach(tasks,id: \.self){ task in
                 Text(task.nameOfTask)
